@@ -21,5 +21,24 @@ const theme = computed(() => {
       <search-field />
       <profile />
     </div>
+    <p class="flex justify-center -mt-16">
+      Challenge by
+      <span>
+        <a
+          class="text-red-700"
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          >Frontend Mentor</a
+        >
+      </span>
+      . <span>Coded by</span>
+      <a
+        class="text-purple"
+        href="https://www.frontendmentor.io/profile/Maryahcee"
+        target="_blank"
+      >
+        <span class="text-red-700"> Mary Njoroge</span></a
+      >.
+    </p>
   </div>
 </template>
