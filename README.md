@@ -1,4 +1,4 @@
-# githubsearchapi
+# githubsearchapi - GitHub user search app
 
 This template should help get you started developing with Vue 3 in Vite.
 
@@ -33,3 +33,31 @@ npm run build
 ```sh
 npm run lint
 ```
+### Screenshots
+
+![](./src/assets/images/lightmode.png)
+
+### Links
+
+- Solution URL: [Solution URL here](https://github.com/Maryahcee/githubsearchapi)
+## My process
+
+-Install Vue CLI
+-create components as per card using mobile first approach
+-Used Tailwind Css to style my card
+-hosted the site using netlify
+### Built with
+
+- Semantic HTML5 markup
+- Tailwind CSS
+- Flexbox
+- Mobile-first workflow
+- [Vuejs](https://vuejs.org/) - Vuejs framework
+- [Styled Components](https://styled-components.com/) - For styles
+## Author
+
+- Frontend Mentor - [@Maryahcee](https://www.frontendmentor.io/profile/Maryahcee)
+
+## Acknowledgments
+
+Great thanks to Harrison Kimani. I couldn't have done it  without you. Cheers!
