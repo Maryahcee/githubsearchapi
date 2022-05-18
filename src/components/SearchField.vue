@@ -23,7 +23,7 @@ const getUserName = (theme) => store.dispatch("fetchUsers", theme);
           type="text"
           required
           placeholder="Search Github Usersname"
-          class="md:w-full xm:w-3/4 md:px-3 xm:px-1 md:py-3 xm:py-2 md:text-base xm:text-sm outline-none ml-2 bg-white dark:bg-darkBlue"
+          class="md:w-full xm:w-3/4 md:px-3 xm:px-1 md:py-3 xm:py-2 md:text-base xm:text-sm outline-none ml-2 bg-white dark:bg-darkBlue dark:text-bright"
         />
         <div class="text-lg w-1/2">
           <p class="text-red-600">
