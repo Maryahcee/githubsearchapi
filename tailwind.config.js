@@ -1,6 +1,5 @@
 /* eslint-disable prettier/prettier */
 module.exports = {
-  darkMode: 'class',
   content: ['./public/**/*.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
     screens: {
@@ -30,4 +29,6 @@ module.exports = {
     },
   },
   plugins: [],
+  darkMode: 'class',
+
 };
