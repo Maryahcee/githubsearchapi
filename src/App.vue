@@ -13,19 +13,20 @@ const theme = computed(() => {
 </script>
 
 <template>
-  <div :class="theme">
+  <div :class="theme"
+  class="bg-lGrayish dark:bg-black">
     <div
-      class="light:bg-white dark:bg-black min-h-screen max-w-full flex flex-col mx-auto items-center justify-center font-['Space_Mono']"
+      class="bg-lGrayish dark:bg-black min-h-screen max-w-full flex flex-col mx-auto items-center justify-center font-['Space_Mono']"
     >
       <Nav />
       <search-field />
       <profile />
     </div>
-    <p class="flex justify-center -mt-16">
+    <p class="flex justify-center -mt-16 dark:text-bright tracking-wide">
       Challenge by
       <span>
         <a
-          class="text-red-700"
+          class="text-red-700 dark:text-rose-600"
           href="https://www.frontendmentor.io?ref=challenge"
           target="_blank"
           >Frontend Mentor</a
@@ -37,7 +38,7 @@ const theme = computed(() => {
         href="https://www.frontendmentor.io/profile/Maryahcee"
         target="_blank"
       >
-        <span class="text-red-700"> Mary Njoroge</span></a
+        <span class="text-red-700 dark:text-rose-600"> Mary Njoroge</span></a
       >.
     </p>
   </div>
