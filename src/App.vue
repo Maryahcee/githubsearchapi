@@ -13,8 +13,7 @@ const theme = computed(() => {
 </script>
 
 <template>
-  <div :class="theme"
-  class="bg-lGrayish dark:bg-black">
+  <div :class="theme" class="bg-lGrayish dark:bg-black">
     <div
       class="bg-lGrayish dark:bg-black min-h-screen max-w-full flex flex-col mx-auto items-center justify-center font-['Space_Mono']"
     >
