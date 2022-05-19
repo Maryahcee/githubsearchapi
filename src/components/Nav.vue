@@ -1,7 +1,6 @@
 <script setup>
 import { computed, onMounted } from "@vue/runtime-core";
 import { useStore } from "vuex";
-import defaultTheme from "../utils/defaultTheme";
 
 const store = useStore();
 
@@ -29,7 +28,7 @@ const toggleTheme = () => {
         @click="toggleTheme"
         class="absolute right-0 top-0 flex cursor-pointer hover:text-lGrey"
       >
-        <span v-if="theme == 'light'" class="flex">
+        <span v-if="theme !== 'dark'" class="flex">
           <span class="text-md text-lBlack dark:text-bright mr-3">DARK</span>
           <img src="../assets/images/icon-moon.svg" alt="" />
         </span>
