@@ -4,12 +4,15 @@ import SearchField from "./components/SearchField.vue";
 import Profile from "./components/Profile.vue";
 import { useStore } from "vuex";
 import { computed } from "@vue/runtime-core";
+import themePrefence from "./utils/defaultTheme";
 
 const store = useStore();
 
 const theme = computed(() => {
   return store.getters.getTheme;
 });
+
+
 </script>
 
 <template>
