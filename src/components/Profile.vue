@@ -47,9 +47,16 @@ onMounted(async () => {
       </div>
       <!-- User's Bio -->
       <p
+        v-if="userProfile.bio"
         class="md:ml-24 pb-5 text-lGrey dark:text-bright md:text-base font-thin md:tracking-wide"
       >
         {{ userProfile.bio }}
+      </p>
+      <p
+        v-else
+        class="md:ml-24 pb-5 text-lGrey dark:text-bright md:text-base font-thin md:tracking-wide"
+      >
+        Not available
       </p>
       <!-- Followers section -->
       <div
@@ -98,7 +105,8 @@ onMounted(async () => {
                 src="../assets/images/icon-location.svg"
                 alt=""
               />
-              <li>{{ userProfile.location }}</li>
+              <li v-if="userProfile.location">{{ userProfile.location }}</li>
+              <li v-else>Not available</li>
             </div>
             <!-- Twitter icon -->
             <div class="flex mb-3">
@@ -107,7 +115,10 @@ onMounted(async () => {
                 src="../assets/images/icon-twitter.svg"
                 alt=""
               />
-              <li>{{ userProfile.twitter_username }}</li>
+              <li v-if="userProfile.twitter_username">
+                {{ userProfile.twitter_username }}
+              </li>
+              <li v-else>Not available</li>
             </div>
           </div>
           <div class="flex md:flex-row sm:flex-row xm:flex-col">
@@ -118,7 +129,8 @@ onMounted(async () => {
                 src="../assets/images/icon-website.svg"
                 alt=""
               />
-              <a href="https://github.blog">{{ userProfile.blog }}</a>
+              <a v-if="userProfile.blog" href="https://github.blog">{{ userProfile.blog }}</a>
+              <p v-else>Not available</p>
             </div>
             <!-- Github Name -->
             <div class="flex">
@@ -127,7 +139,8 @@ onMounted(async () => {
                 src="../assets/images/icon-company.svg"
                 alt=""
               />
-              <li>@{{ userProfile.login }}</li>
+              <li v-if="userProfile.login">@{{ userProfile.login }}</li>
+              <li v-else>Not available</li>
             </div>
           </div>
         </ul>
