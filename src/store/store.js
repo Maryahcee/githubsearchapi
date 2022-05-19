@@ -7,7 +7,7 @@ export default createStore({
   state: {
     user: {},
     error: '',
-    theme: '',
+    theme: 'light',
   },
   mutations: {
     SET_USER(state, user) {
