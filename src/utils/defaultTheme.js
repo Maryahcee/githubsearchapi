@@ -7,7 +7,7 @@ if (localStorage.theme === undefined) {
   ) {
     document.documentElement.classList.add("dark");
   } else {
-    document.documentElement.classList.remove("light");
+    document.documentElement.classList.remove("dark");
   }
 }
 // Whenever the user explicitly chooses light mode
