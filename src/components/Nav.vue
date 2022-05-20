@@ -12,6 +12,17 @@ const toggleTheme = () => {
   let newTheme = store.getters.getTheme == "dark" ? "light" : "dark";
   store.dispatch("updateTheme", newTheme);
 };
+
+onMounted(async () => {
+  if (
+    window.matchMedia &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches
+  ) {
+    store.dispatch("updateTheme", "dark");
+  } else {
+    store.dispatch("updateTheme", "light");
+  }
+});
 </script>
 
 <template>
