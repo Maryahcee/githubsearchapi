@@ -61,4 +61,4 @@ npm run lint
 
 ## Acknowledgments
 
-Great thanks to Harrison Kimani. I couldn't have done it  without you. Cheers!
+Great thanks to [Harrison Kimani](https://github.com/MegacoderKim). 
